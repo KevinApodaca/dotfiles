@@ -1,0 +1,113 @@
+{
+    "editor.fontFamily": "'FiraCode Nerd Font', Menlo, 'Monaco', 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.renderIndentGuides": false,
+    "explorer.openEditors.visible": 0,
+    "editor.hover.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.fontWeight": "500",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.colorDecorators": false,
+    "editor.tabCompletion": "on",
+    "editor.glyphMargin": false,
+    "editor.snippetSuggestions": "top",
+    "editor.parameterHints.enabled": false,
+    "javascript.suggest.names": false,
+    "editor.showFoldingControls": "mouseover",
+    "editor.find.seedSearchStringFromSelection": true,
+    "editor.renderWhitespace": "none",
+    "breadcrumbs.enabled": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 6,
+    "html.format.enable": true,
+    "html.format.preserveNewLines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "workbench.sideBar.location":"left",
+    "extensions.ignoreRecommendations": false,
+    "editor.wordBasedSuggestions": false,
+    "files.exclude": {
+        ".history": true,
+        "**/.svn": true,
+        "**/.next": true,
+        "**/coverage": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "autoprefixer.formatOnSave": true,
+    "workbench.editor.tabCloseButton": "off",
+    "turboConsoleLog.logMessagePrefix": "Log",
+    "eslint.alwaysShowStatus": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.action.toggleActivityBarVisibility": false,
+    "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+    "editor.formatOnPaste": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop":false,
+    "editor.renderControlCharacters": false,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "explorer.confirmDelete":false,
+    "workbench.iconTheme":"vscode-icons",
+    "workbench.colorTheme":"Palenight Theme",
+    "workbench.colorCustomizations": {},
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint":true
+    },
+    "python.linting.pylintArgs": [
+    "--load-plugins=pylint_django",
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.previewFlutterUiGuides": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Microsoft",
+    "python.showStartPage": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.matchBrackets": false,
+    "python.pythonPath": "/usr/bin/python",
+    "files.associations": {
+      "*.html": "html"
+    },
+    "terminal.integrated.cursorStyle": "underline",
+    "mssql.connections": [
+      {
+        "server": "{{put-server-name-here}}",
+        "database": "{{put-database-name-here}}",
+        "user": "{{put-username-here}}",
+        "password": "{{put-password-here}}"
+      }
+    ],
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+
+}
