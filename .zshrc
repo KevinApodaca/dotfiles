@@ -120,6 +120,9 @@ alias pst="procs --tree"
 # Changing "find" to "fd"
 alias find="fd"
 
+# Changing "top" to "bottom" from https://github.com/ClementTsang/bottom
+alias top="btm"
+
 # youtube-dl
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
