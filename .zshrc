@@ -110,18 +110,21 @@ alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
-# Changing "grep" to "ripgrep"
+# Changing "grep" to "ripgrep" from https://github.com/BurntSushi/ripgrep
 alias grep="rg"
 
-# Changing "ps" to "procs"
+# Changing "ps" to "procs" fron https://github.com/dalance/procs
 alias ps="procs --sortd"
 alias pst="procs --tree"
 
-# Changing "find" to "fd"
+# Changing "find" to "fd" from https://github.com/sharkdp/fd
 alias find="fd"
 
 # Changing "top" to "bottom" from https://github.com/ClementTsang/bottom
 alias top="btm"
+
+# Changing "du" to "dust" from https://github.com/bootandy/dust
+alias du="dust"
 
 # youtube-dl
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
