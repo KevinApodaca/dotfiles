@@ -1,4 +1,13 @@
-  -- Base
+
+--                                      _ 
+--                                     | |
+--__  ___ __ ___   ___  _ __   __ _  __| |
+-- \ \/ / '_ ` _ \ / _ \| '_ \ / _` |/ _` |
+--  >  <| | | | | | (_) | | | | (_| | (_| |
+-- /_/\_\_| |_| |_|\___/|_| |_|\__,_|\__,_|
+                                        
+
+    -- Base
 import XMonad
 import System.Directory
 import System.IO (hPutStrLn)
@@ -289,7 +298,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| wideAccordion
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" <fn=2>\xf0e7</fn> dev ", " <fn=2>\xf0ac</fn> www ", " <fn=2>\xf0ad</fn> sys", " <fn=2>\xf07c</fn> files", " <fn=2>\xf07c</fn> doc ", " <fn=2>\xf086</fn> chat ", " <fn=2>\xf001</fn> music "]
+myWorkspaces = [" <fn=2>\xf0e7</fn> dev ", " <fn=2>\xf0ac</fn> www ", " <fn=2>\xf086</fn> chat", " <fn=2>\xf0ad</fn> sys", " <fn=2>\xf07c</fn> files", " <fn=2>\xf07c</fn> docs ", " <fn=2>\xf001</fn> music "]
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"
@@ -345,7 +354,7 @@ myKeys =
 
     -- Useful programs to have a keybinding for launch
         , ("M-<Return>", spawn (myTerminal))
-        , ("M-w", spawn (myBrowser))
+        , ("M-S-w", spawn (myBrowser))
         , ("M-M1-h", spawn (myTerminal ++ " -e htop"))
         , ("M-S-f", spawn (myFileManager))
     -- Kill windows
@@ -417,9 +426,9 @@ myKeys =
     -- Toggle show/hide these programs.  They run on a hidden workspace.
     -- When you toggle them to show, it brings them to your current workspace.
     -- Toggle them to hide and it sends them back to hidden workspace (NSP).
-        , ("C-s t", namedScratchpadAction myScratchPads "terminal")
-        , ("C-s m", namedScratchpadAction myScratchPads "mocp")
-        , ("C-s c", namedScratchpadAction myScratchPads "calculator")
+    --  , ("C-s t", namedScratchpadAction myScratchPads "terminal")
+    --  , ("C-s m", namedScratchpadAction myScratchPads "mocp")
+    --  , ("C-s c", namedScratchpadAction myScratchPads "calculator")
 
     -- Set wallpaper with 'feh'. Type 'SUPER+F1' to launch sxiv in the wallpapers directory.
     -- Then in sxiv, type 'C-x w' to set the wallpaper that you choose.
