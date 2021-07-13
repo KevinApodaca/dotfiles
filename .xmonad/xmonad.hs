@@ -90,6 +90,9 @@ myBrowser = "brave"  -- Sets brave as browser
 myFileManager :: String
 myFileManager = "pcmanfm" -- Sets pcmanfm as file manager
 
+myDiscord :: String
+myDiscord = "discord" -- Sets quick launch of discord
+
 myEditor :: String
 myEditor = myTerminal ++ " -e vim "    -- Sets vim as editor
 
@@ -298,7 +301,7 @@ myLayoutHook = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts float
                                  ||| wideAccordion
 
 -- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
-myWorkspaces = [" <fn=2>\xf0e7</fn> dev ", " <fn=2>\xf0ac</fn> www ", " <fn=2>\xf086</fn> chat", " <fn=2>\xf0ad</fn> sys", " <fn=2>\xf07c</fn> files", " <fn=2>\xf07c</fn> docs ", " <fn=2>\xf001</fn> music "]
+myWorkspaces = [" <fn=2>\xf0e7</fn> dev ", " <fn=2>\xf0ac</fn> www ", " <fn=2>\xf086</fn> chat", " <fn=2>\xf186</fn> work "," <fn=2>\xf0ad</fn> sys", " <fn=2>\xf07c</fn> files", " <fn=2>\xf07c</fn> docs ", " <fn=2>\xf001</fn> music "]
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"
@@ -357,6 +360,7 @@ myKeys =
         , ("M-S-w", spawn (myBrowser))
         , ("M-M1-h", spawn (myTerminal ++ " -e htop"))
         , ("M-S-f", spawn (myFileManager))
+        , ("M-S-d", spawn (myDiscord))
     -- Kill windows
         , ("M-S-c", kill1)     -- Kill the currently focused client
         , ("M-S-a", killAll)   -- Kill all windows on current workspace
